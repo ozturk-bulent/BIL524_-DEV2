@@ -1,0 +1,56 @@
+#Temel fonksiyonlar
+print("I'm code")
+getwd()
+kuvvet_alma <- function(x)(return(x^4))
+print(kuvvet_alma(3)) # kuvvet alma fonksiyonu
+kronomometre <- function(xden){
+  print(xden)
+  while(xden!=20){
+    Sys.sleep(1) 
+    xden <-xden+1
+    print(xden)}
+}
+kronomometre(0)  #zaman fonksiyonu
+
+veri= read.csv("http://johnmuschelli.com/intro_to_r/data/Youth_Tobacco_Survey_YTS_Data.csv") 
+gtwd()
+setwd()
+View(veri)
+head(veri)
+View(mtcars)
+dim(mtcars)
+nrow(mtcars)
+ncol(mtcars)
+summary(cars)
+help("ncol")
+library(dplyr)
+veri_yeniden_ad=rename(veri,year=YEAR)
+names(veri_yeniden_ad)
+names(veri)
+library(readr)
+veri_yeniden_ad2=rename(veri,year=YEAR)
+
+getwd()
+library(tidyverse)
+veri2=data(mtcars)
+View(df)
+veri2=data.frame(mtcars)
+dim(mtcars)
+head(mtcars)
+veri2_tibble=as_tibble(veri2)
+head(veri2_tibble)
+names(veri2)
+veri2_gear=veri2$gear
+dim(veri2_gear)
+x=c(1,2,3)
+?'matrix-class'
+veri2_mpg=select(veri2,mpg)
+dim(veri2_mpg)
+veri2_mpg2=pull(select(veri2_mpg))
+dim(veri2_mpg2)
+knitr::kable(tab)
+class(mtcars)
+
+
+
+
